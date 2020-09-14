@@ -1,0 +1,27 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Building a drug calculator",
+  "main": "main.js",
+  "scripts": {
+    "build": "rollup --c --environment BUILD:production",
+    "dev": "rollup --c --environment BUILD:development",
+    "watch": "rollup --config --environment BUILD:development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drug",
+    "calculator",
+  ],
+  "author": "Simon Bluhm",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "ejs": "^3.1.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.26.2"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}
